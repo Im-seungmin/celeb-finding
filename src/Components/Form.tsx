@@ -2,17 +2,18 @@ import styled from 'styled-components'
 
 export const Form = styled.form`
   width: 300px;
-  height: 500px;
+  height: auto;
 
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   display: flex;
+  flex-direction: column;
 
   padding: 16px;
 
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 `
 
 export const ItemDiv = styled.div`
@@ -30,7 +31,7 @@ export const TextDiv = styled.div`
 
   font-size: 18px;
 
-  color: #334155;
+  color: #666;
 
   display: flex;
   align-items: center;
