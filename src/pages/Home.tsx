@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FORM_DATA } from '../assets/data'
 import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/Form'
 import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
-import axios from 'axios'
+// import axios from 'axios'
 import { Alert, AlertBox, AlertMessage } from '../Components/Function'
 import type { FormType } from '../assets/type'
 
@@ -111,7 +111,3 @@ const Home = () => {
 }
 
 export default Home
-function celebritieScore(data: FormType) {
-  throw new Error('Function not implemented.')
-}
-
