@@ -9,7 +9,7 @@ type FormItem = (typeof FORM_DATA)[number]
 
 const INIT_DATA = {
   name: '',
-  bloodType: '',
+  bloodType: 'A',
   birthday: ''
 }
 
@@ -55,7 +55,7 @@ const Home = () => {
       }))
     }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const { name, birthday, bloodType } = data
 
@@ -67,7 +67,8 @@ const Home = () => {
 
     // BUILD 14:41
     console.log('제출된 데이터:', data)
-    axios.post('/match', data)
+    const response = await axios.post('/match', data)
+    console.log(response)
   }
 
   return (
