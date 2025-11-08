@@ -3,6 +3,7 @@ import { FORM_DATA } from '../assets/data'
 import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/Form'
 import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
 import axios from 'axios'
+import { Alert, AlertBox, AlertMessage } from '../Components/Function'
 
 type FormItem = (typeof FORM_DATA)[number]
 
@@ -43,6 +44,7 @@ const FormField = ({
 
 const Home = () => {
   const [data, setData] = useState(INIT_DATA)
+  const [alerts, setAlerts] = useState(false)
 
   const handleChange =
     (key: keyof typeof INIT_DATA) =>
@@ -58,7 +60,8 @@ const Home = () => {
     const { name, birthday, bloodType } = data
 
     if (!name || !birthday || !bloodType) {
-      alert('모든 항목을 입력해주세요.')
+      setAlerts(true)
+      // alert('모든 항목을 입력해주세요.')
       return
     }
 
@@ -69,6 +72,14 @@ const Home = () => {
 
   return (
     <Wrap>
+      <Alert display={alerts}>
+        <AlertBox>
+          <AlertMessage>모든 정보를 입력해주세요!</AlertMessage>
+          <Button type="button" onClick={() => setAlerts(false)}>
+            닫기
+          </Button>
+        </AlertBox>
+      </Alert>
       <TopArea>
         <div>
           <Title>나랑 닮은 셀럽 찾기</Title>
