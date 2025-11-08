@@ -19,7 +19,7 @@ const FormField = ({ item }: { item: FormItem }) => {
           ))}
         </Select>
       ) : (
-        <Input type={type} placeholder={item.placeholder} min={type === 'number' ? 0 : undefined} />
+        <Input type={type} placeholder={item.placeholder} />
       )}
     </ItemDiv>
   )
@@ -37,7 +37,7 @@ const Home = () => {
         <div>
           <Title>나랑 닮은 셀럽 찾기</Title>
           <Content>
-            이름, 나이, 혈액형, MBTI, 사는 곳을 입력해주시면
+            이름, 나이, 혈액형, 생일을 입력해주시면
             <br />
             가장 비슷한 셀럽을 찾아드립니다!
           </Content>

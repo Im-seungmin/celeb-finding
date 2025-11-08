@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Form = styled.form`
   width: 300px;
-  height: 450px;
+  height: 300px;
 
   background-color: white;
   border-radius: 12px;
@@ -12,8 +12,6 @@ export const Form = styled.form`
   flex-direction: column;
 
   padding: 16px;
-
-  /* overflow-y: scroll; */
 `
 
 export const ItemDiv = styled.div`
