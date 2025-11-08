@@ -5,6 +5,7 @@ import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
 // import axios from 'axios'
 import { Alert, AlertBox, AlertMessage } from '../Components/Function'
 import type { FormType } from '../assets/type'
+import {celebritieScore} from '../../api/api'
 
 type FormItem = (typeof FORM_DATA)[number]
 
