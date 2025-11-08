@@ -4,10 +4,11 @@ import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/For
 import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
 import axios from 'axios'
 import { Alert, AlertBox, AlertMessage } from '../Components/Function'
+import type { FormType } from '../assets/type'
 
 type FormItem = (typeof FORM_DATA)[number]
 
-const INIT_DATA = {
+const INIT_DATA: FormType = {
   name: '',
   bloodType: 'A',
   birthday: ''
@@ -55,7 +56,7 @@ const Home = () => {
       }))
     }
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const { name, birthday, bloodType } = data
 
@@ -67,8 +68,10 @@ const Home = () => {
 
     // BUILD 14:41
     console.log('제출된 데이터:', data)
-    const response = await axios.post('/match', data)
-    console.log(response)
+    const result = celebritieScore(data);
+    console.log(result);
+    // const response = await axios.post('/match', data)
+    // console.log(response)
   }
 
   return (
@@ -108,3 +111,7 @@ const Home = () => {
 }
 
 export default Home
+function celebritieScore(data: FormType) {
+  throw new Error('Function not implemented.')
+}
+
