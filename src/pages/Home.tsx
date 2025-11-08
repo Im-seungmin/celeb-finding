@@ -2,7 +2,35 @@ import { FORM_DATA } from '../assets/data'
 import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/Form'
 import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
 
+type FormItem = (typeof FORM_DATA)[number]
+
+const FormField = ({ item }: { item: FormItem }) => {
+  const { name, type } = item
+
+  return (
+    <ItemDiv>
+      <TextDiv>{name}</TextDiv>
+      {type === 'select' ? (
+        <Select>
+          {item.options?.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </Select>
+      ) : (
+        <Input type={type} placeholder={item.placeholder} min={type === 'number' ? 0 : undefined} />
+      )}
+    </ItemDiv>
+  )
+}
+
 const Home = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    // todo: 입력값 수집 후 /result 이동
+  }
+
   return (
     <Wrap>
       <TopArea>
@@ -14,30 +42,11 @@ const Home = () => {
             가장 비슷한 셀럽을 찾아드립니다!
           </Content>
         </div>
-        <Form>
-          {FORM_DATA.map((item) => (
-            <ItemDiv key={item.name}>
-              <TextDiv>{item.name}</TextDiv>
-              {item.type === 'select' ? (
-                <Select>
-                  {item.options?.map((option) => (
-                    <option key={option} value={option}>
-                      {option}
-                    </option>
-                  ))}
-                </Select>
-              ) : (
-                <Input type={item.type} placeholder={item.placeholder} />
-              )}
-            </ItemDiv>
-          ))}
 
-          {/* {CONTENT.map((text) => (
-            <ItemDiv key={text}>
-              <TextDiv>{text}</TextDiv>
-              <Input type="text" placeholder={`${text}를 입력해주세요.`} />
-            </ItemDiv>
-          ))} */}
+        <Form onSubmit={handleSubmit}>
+          {FORM_DATA.map((item) => (
+            <FormField key={item.name} item={item} />
+          ))}
           <Button type="submit">찾기</Button>
         </Form>
       </TopArea>
