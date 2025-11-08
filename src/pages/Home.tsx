@@ -8,7 +8,11 @@ const Home = () => {
       <TopArea>
         <div>
           <Title>나랑 닮은 셀럽 찾기</Title>
-          <Content>어쩌고저쩌고 연예인을 찾으러 갑시다.</Content>
+          <Content>
+            이름, 나이, 혈액형, MBTI, 사는 곳을 입력해주시면
+            <br />
+            가장 비슷한 셀럽을 찾아드립니다!
+          </Content>
         </div>
         <Form>
           {FORM_DATA.map((item) => (
