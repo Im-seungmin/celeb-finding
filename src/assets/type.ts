@@ -1,3 +1,5 @@
+import type { FORM_DATA } from "./data";
+
 export type FormType = {
     name: string,
     birthday: string,
@@ -12,3 +14,5 @@ export type ResultType = {
     };
     sameDataArr: any[];
 } | null;
+
+export type FormItem = (typeof FORM_DATA)[number];

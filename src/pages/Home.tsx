@@ -3,10 +3,8 @@ import { FORM_DATA } from '../assets/data'
 import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/Form'
 import { CommentArea, Content, Title, TopArea, Wrap } from '../Components/Wrap'
 import { Alert, AlertBox, AlertMessage, MiniMessage, TitleMessage } from '../Components/Function'
-import type { FormType, ResultType } from '../assets/type'
+import type { FormItem, FormType, ResultType } from '../assets/type'
 import { celebritieScore } from '../api/api'
-
-type FormItem = (typeof FORM_DATA)[number]
 
 const INIT_DATA: FormType = {
   name: '',
