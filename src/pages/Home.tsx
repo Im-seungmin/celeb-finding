@@ -4,7 +4,7 @@ import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/For
 import { CommentArea, Content, Title, TopArea, Wrap } from '../Components/Wrap'
 import { Alert, AlertBox, AlertMessage, MiniMessage, TitleMessage } from '../Components/Function'
 import type { FormType, ResultType } from '../assets/type'
-import { celebritieScore } from '../../api/api'
+import { celebritieScore } from '../api/api'
 
 type FormItem = (typeof FORM_DATA)[number]
 

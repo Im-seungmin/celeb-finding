@@ -1,5 +1,5 @@
-import type { FormType } from '../src/assets/type'
-import _data from '../data/celebrities.json'
+import type { FormType } from '../assets/type'
+import _data from '../../data/celebrities.json'
 
 type Celeb = {
   name: string;
