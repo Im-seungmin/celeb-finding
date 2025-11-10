@@ -51,9 +51,21 @@ export const AlertBox = styled.div<{WIDTH: string, HEIGHT: string}>`
   animation: ${popIn} 0.18s ease-out;
 `
 
-export const AlertMessage = styled.div`
+export const AlertMessage = styled.div<{column?: boolean}>`
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100px;
+  flex-direction: ${(props) => props.column ? 'column' : 'row'};
+`
+export const TitleMessage = styled.div`
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 18px;
+`
+
+export const MiniMessage = styled.div`
+  font-size: 11px;
+  margin-top: 25px;
+  color: #555;
 `

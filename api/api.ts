@@ -18,7 +18,7 @@ export const celebritieScore = ({name, birthday, bloodType, MBTI}: FormType) => 
             score += 60;
         }
         if(itemYear === year) {
-            arr.push('태어난 해')
+            arr.push('태어난 연도')
             score += 30;
         }
         if(itemMonth === month && itemDay === day) {
