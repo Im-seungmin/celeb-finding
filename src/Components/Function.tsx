@@ -35,7 +35,7 @@ export const Alert = styled.div<{ display: boolean }>`
   font-size: 18px;
 
   @media (max-width: 480px) {
-    width: 480px;
+    width: 100%;
     height: 100%;
   }
 `
@@ -62,6 +62,7 @@ export const AlertMessage = styled.div<{column?: boolean}>`
   align-items: center;
   min-height: 100px;
   flex-direction: ${(props) => props.column ? 'column' : 'row'};
+  word-break: keep-all;
 `
 export const TitleMessage = styled.div`
   font-size: 32px;

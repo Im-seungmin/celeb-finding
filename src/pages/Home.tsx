@@ -100,6 +100,7 @@ const Home = () => {
                 <div>
                   {data.name}님은 {result?.best.name}님과 제일 비슷합니다!!
                 </div>
+                <br />
                 <div>
                   {result?.sameDataArr && result.sameDataArr.length > 0
                     ? `${result.sameDataArr.join('(이)랑 ')}이 똑같으십니다 🥰`
