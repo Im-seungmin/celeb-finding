@@ -35,9 +35,9 @@ export const Alert = styled.div<{ display: boolean }>`
   font-size: 18px;
 `
 
-export const AlertBox = styled.div`
-  width: 300px;
-  min-height: 200px;
+export const AlertBox = styled.div<{WIDTH: string, HEIGHT: string}>`
+  width: ${(props) => props.WIDTH};
+  min-height: ${(props) => props.HEIGHT};
   background-color: white;
   padding: 20px 40px;
   border-radius: 8px;

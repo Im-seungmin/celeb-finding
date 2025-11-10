@@ -4,3 +4,11 @@ export type FormType = {
     bloodType: string,
     MBTI: string
 }
+
+export type ResultType = {
+    best: {
+        name: string;
+        score: number;
+    };
+    sameDataArr: any[];
+} | null;

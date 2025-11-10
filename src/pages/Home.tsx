@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FORM_DATA } from '../assets/data'
 import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/Form'
 import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
 import { Alert, AlertBox, AlertMessage } from '../Components/Function'
-import type { FormType } from '../assets/type'
+import type { FormType, ResultType } from '../assets/type'
 import {celebritieScore} from '../../api/api'
 
 type FormItem = (typeof FORM_DATA)[number]
@@ -47,6 +47,8 @@ const FormField = ({
 const Home = () => {
   const [data, setData] = useState(INIT_DATA)
   const [alerts, setAlerts] = useState(false)
+  const [result, setResult] = useState<ResultType>(null);
+  const [alertType, setAlertType] = useState<null | 'warning' | 'result'>(null)
 
   const handleChange =
     (key: keyof typeof INIT_DATA) =>
@@ -62,24 +64,41 @@ const Home = () => {
     const { name, birthday, bloodType } = data
 
     if (!name || !birthday || !bloodType) {
-      setAlerts(true)
-      // alert('모든 항목을 입력해주세요.')
+      setAlertType('warning')
       return
     }
 
-    console.log('제출된 데이터:', data)
-    const result = celebritieScore(data);
-    console.log(result);
+    const response = celebritieScore(data);
+    setResult(response);
   }
+
+  useEffect(() => {
+    if(result === null) {
+      // 닫기
+    } else {
+      console.log(result);
+    }
+  }, [result]);
+
+  useEffect(() => {
+    if(alertType) {
+      setAlerts(true);
+    } else {
+      setAlerts(false);
+    }
+  }, [alertType])
 
   return (
     <Wrap>
       <Alert display={alerts}>
-        <AlertBox>
-          <AlertMessage>모든 정보를 입력해주세요!</AlertMessage>
-          <Button type="button" onClick={() => setAlerts(false)}>
+        <AlertBox WIDTH={alertType === 'warning' ? '300px' : '500px'} HEIGHT={alertType === 'warning' ? '200px' : '400px'}>
+          {
+            alertType === 'warning' ? <><AlertMessage>모든 정보를 입력해주세요!</AlertMessage>
+          <Button type="button" onClick={() => setAlertType(null)}>
             닫기
-          </Button>
+          </Button></> : <></>
+          }
+          
         </AlertBox>
       </Alert>
       <TopArea>
