@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { FORM_DATA } from '../assets/data'
 import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/Form'
 import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
-// import axios from 'axios'
 import { Alert, AlertBox, AlertMessage } from '../Components/Function'
 import type { FormType } from '../assets/type'
 import {celebritieScore} from '../../api/api'
@@ -12,7 +11,8 @@ type FormItem = (typeof FORM_DATA)[number]
 const INIT_DATA: FormType = {
   name: '',
   bloodType: 'A',
-  birthday: ''
+  birthday: '',
+  MBTI: 'INTJ'
 }
 
 const FormField = ({
@@ -67,12 +67,9 @@ const Home = () => {
       return
     }
 
-    // BUILD 14:41
     console.log('제출된 데이터:', data)
     const result = celebritieScore(data);
     console.log(result);
-    // const response = await axios.post('/match', data)
-    // console.log(response)
   }
 
   return (

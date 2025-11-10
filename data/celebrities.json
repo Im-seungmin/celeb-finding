@@ -1,4 +1,702 @@
 [
-  { "name": "아이유", "birthday": "1993-05-16", "bloodType": "A" },
-  { "name": "유재석", "birthday": "1972-08-14", "bloodType": "B" }
+  {
+    "name": "이지은",
+    "nickname": "아이유",
+    "birthday": "1993-05-16",
+    "bloodType": "O",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "김남준",
+    "nickname": "RM",
+    "birthday": "1994-09-12",
+    "bloodType": "A",
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "김석진",
+    "nickname": "진",
+    "birthday": "1992-12-04",
+    "bloodType": "O",
+    "MBTI": "INTP"
+  },
+  {
+    "name": "민윤기",
+    "nickname": "슈가",
+    "birthday": "1993-03-09",
+    "bloodType": "O",
+    "MBTI": "ISTP"
+  },
+  {
+    "name": "정호석",
+    "nickname": "제이홉",
+    "birthday": "1994-02-18",
+    "bloodType": "A",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "박지민",
+    "nickname": "지민",
+    "birthday": "1995-10-13",
+    "bloodType": "A",
+    "MBTI": "ENFJ"
+  },
+  {
+    "name": "김태형",
+    "nickname": "뷔",
+    "birthday": "1995-12-30",
+    "bloodType": "AB",
+    "MBTI": "ENTJ"
+  },
+  {
+    "name": "전정국",
+    "nickname": "정국",
+    "birthday": "1997-09-01",
+    "bloodType": "A",
+    "MBTI": "INTP"
+  },
+  {
+    "name": "김지수",
+    "nickname": "지수",
+    "birthday": "1995-01-03",
+    "bloodType": "A",
+    "MBTI": "ISTP"
+  },
+  {
+    "name": "김제니",
+    "nickname": "제니",
+    "birthday": "1996-01-16",
+    "bloodType": "B",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "박채영",
+    "nickname": "로제",
+    "birthday": "1997-02-11",
+    "bloodType": "B",
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "라리사 마노반",
+    "nickname": "리사",
+    "birthday": "1997-03-27",
+    "bloodType": "O",
+    "MBTI": "ESFP"
+  },
+  {
+    "name": "임나연",
+    "nickname": "나연",
+    "birthday": "1995-09-22",
+    "bloodType": "A",
+    "MBTI": "ISTP"
+  },
+  {
+    "name": "유정연",
+    "nickname": "정연",
+    "birthday": "1996-11-01",
+    "bloodType": "O",
+    "MBTI": "ESFJ"
+  },
+  {
+    "name": "히라이 모모",
+    "nickname": "모모",
+    "birthday": "1996-11-09",
+    "bloodType": "A",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "미나토자키 사나",
+    "nickname": "사나",
+    "birthday": "1996-12-29",
+    "bloodType": "B",
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "박지효",
+    "nickname": "지효",
+    "birthday": "1997-02-01",
+    "bloodType": "O",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "묘이 미나",
+    "nickname": "미나",
+    "birthday": "1997-03-24",
+    "bloodType": "A",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "김다현",
+    "nickname": "다현",
+    "birthday": "1998-05-28",
+    "bloodType": "O",
+    "MBTI": "ISFJ"
+  },
+  {
+    "name": "손채영",
+    "nickname": "채영",
+    "birthday": "1999-04-23",
+    "bloodType": "B",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "저우쯔위",
+    "nickname": "쯔위",
+    "birthday": "1999-06-14",
+    "bloodType": "A",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "유지민",
+    "nickname": "카리나",
+    "birthday": "2000-04-11",
+    "bloodType": null,
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "우치나가 애리",
+    "nickname": "지젤",
+    "birthday": "2000-10-30",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "김민정",
+    "nickname": "윈터",
+    "birthday": "2001-01-01",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "닝이줘",
+    "nickname": "닝닝",
+    "birthday": "2002-10-23",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "안유진",
+    "nickname": "안유진",
+    "birthday": "2003-09-01",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "김가을",
+    "nickname": "가을",
+    "birthday": "2002-09-24",
+    "bloodType": "B",
+    "MBTI": null
+  },
+  {
+    "name": "아이바 레이",
+    "nickname": "레이",
+    "birthday": "2004-02-03",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "장원영",
+    "nickname": "장원영",
+    "birthday": "2004-08-31",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "김지원",
+    "nickname": "리즈",
+    "birthday": "2004-11-21",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "이현서",
+    "nickname": "이서",
+    "birthday": "2007-02-21",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "김민지",
+    "nickname": "민지",
+    "birthday": "2004-05-07",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "팜응옥한",
+    "nickname": "하니",
+    "birthday": "2004-10-06",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "모지혜",
+    "nickname": "다니엘",
+    "birthday": "2005-04-11",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "강해린",
+    "nickname": "해린",
+    "birthday": "2006-05-15",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "이혜인",
+    "nickname": "혜인",
+    "birthday": "2008-04-21",
+    "bloodType": null,
+    "MBTI": null
+  },
+  {
+    "name": "김채원",
+    "nickname": "김채원",
+    "birthday": "2000-08-01",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "미야와키 사쿠라",
+    "nickname": "사쿠라",
+    "birthday": "1998-03-19",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "허윤진",
+    "nickname": "허윤진",
+    "birthday": "2001-10-08",
+    "bloodType": "B",
+    "MBTI": null
+  },
+  {
+    "name": "나카무라 카즈하",
+    "nickname": "카즈하",
+    "birthday": "2003-08-09",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "홍은채",
+    "nickname": "홍은채",
+    "birthday": "2006-11-10",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "최승철",
+    "nickname": "에스쿱스",
+    "birthday": "1995-08-08",
+    "bloodType": "AB",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "윤정한",
+    "nickname": "정한",
+    "birthday": "1995-10-04",
+    "bloodType": "B",
+    "MBTI": null
+  },
+  {
+    "name": "홍지수",
+    "nickname": "조슈아",
+    "birthday": "1995-12-30",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "문준휘",
+    "nickname": "준",
+    "birthday": "1996-06-10",
+    "bloodType": "B",
+    "MBTI": null
+  },
+  {
+    "name": "권순영",
+    "nickname": "호시",
+    "birthday": "1996-06-15",
+    "bloodType": "B",
+    "MBTI": "INTJ"
+  },
+  {
+    "name": "전원우",
+    "nickname": "원우",
+    "birthday": "1996-07-17",
+    "bloodType": "A",
+    "MBTI": "INTJ"
+  },
+  {
+    "name": "이지훈",
+    "nickname": "우지",
+    "birthday": "1996-11-22",
+    "bloodType": "A",
+    "MBTI": "INTJ"
+  },
+  {
+    "name": "이석민",
+    "nickname": "도겸",
+    "birthday": "1997-02-18",
+    "bloodType": "O",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "김민규",
+    "nickname": "민규",
+    "birthday": "1997-04-06",
+    "bloodType": "B",
+    "MBTI": "ENTJ"
+  },
+  {
+    "name": "서명호",
+    "nickname": "디에잇",
+    "birthday": "1997-11-07",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "부승관",
+    "nickname": "승관",
+    "birthday": "1998-01-16",
+    "bloodType": "B",
+    "MBTI": null
+  },
+  {
+    "name": "최한솔",
+    "nickname": "버논",
+    "birthday": "1998-02-18",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "이찬",
+    "nickname": "디노",
+    "birthday": "1999-02-11",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "방찬",
+    "nickname": "방찬",
+    "birthday": "1997-10-03",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "이민호",
+    "nickname": "리노",
+    "birthday": "1998-10-25",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "서창빈",
+    "nickname": "창빈",
+    "birthday": "1999-08-11",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "황현진",
+    "nickname": "현진",
+    "birthday": "2000-03-20",
+    "bloodType": "B",
+    "MBTI": null
+  },
+  {
+    "name": "한지성",
+    "nickname": "한",
+    "birthday": "2000-09-14",
+    "bloodType": "O",
+    "MBTI": null
+  },
+  {
+    "name": "이용복",
+    "nickname": "필릭스",
+    "birthday": "2000-09-15",
+    "bloodType": "AB",
+    "MBTI": null
+  },
+  {
+    "name": "김승민",
+    "nickname": "승민",
+    "birthday": "2000-09-22",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "양정인",
+    "nickname": "아이엔",
+    "birthday": "2001-02-08",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "박용규",
+    "nickname": "박서준",
+    "birthday": "1988-12-16",
+    "bloodType": "O",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "송중기",
+    "nickname": "송중기",
+    "birthday": "1985-09-19",
+    "bloodType": "A",
+    "MBTI": "ESFJ"
+  },
+  {
+    "name": "이소희",
+    "nickname": "한소희",
+    "birthday": "1994-11-18",
+    "bloodType": "AB",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "김태리",
+    "nickname": "김태리",
+    "birthday": "1990-04-24",
+    "bloodType": "B",
+    "MBTI": "INTJ"
+  },
+  {
+    "name": "박은빈",
+    "nickname": "박은빈",
+    "birthday": "1992-09-04",
+    "bloodType": "A",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "남주혁",
+    "nickname": "남주혁",
+    "birthday": "1994-02-22",
+    "bloodType": "A",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "김수현",
+    "nickname": "김수현",
+    "birthday": "1988-02-16",
+    "bloodType": "AB",
+    "MBTI": "ISFJ"
+  },
+  {
+    "name": "송혜교",
+    "nickname": "송혜교",
+    "birthday": "1981-11-22",
+    "bloodType": "A",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "김태평",
+    "nickname": "현빈",
+    "birthday": "1982-09-25",
+    "bloodType": "B",
+    "MBTI": "ISFJ"
+  },
+  {
+    "name": "손언진",
+    "nickname": "손예진",
+    "birthday": "1982-01-11",
+    "bloodType": "A",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "공지철",
+    "nickname": "공유",
+    "birthday": "1979-07-10",
+    "bloodType": "A",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "왕지현",
+    "nickname": "전지현",
+    "birthday": "1981-10-30",
+    "bloodType": "B",
+    "MBTI": "ESFJ"
+  },
+  {
+    "name": "임동현",
+    "nickname": "이도현",
+    "birthday": "1995-04-11",
+    "bloodType": "A",
+    "MBTI": null
+  },
+  {
+    "name": "이동민",
+    "nickname": "차은우",
+    "birthday": "1997-03-30",
+    "bloodType": "B",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "김용선",
+    "nickname": "솔라",
+    "birthday": "1991-02-21",
+    "bloodType": "B",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "문별이",
+    "nickname": "문별",
+    "birthday": "1992-12-22",
+    "bloodType": "B",
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "정휘인",
+    "nickname": "휘인",
+    "birthday": "1995-04-17",
+    "bloodType": "B",
+    "MBTI": "INTP"
+  },
+  {
+    "name": "안혜진",
+    "nickname": "화사",
+    "birthday": "1995-07-23",
+    "bloodType": "A",
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "강다니엘",
+    "nickname": "강다니엘",
+    "birthday": "1996-12-10",
+    "bloodType": "A",
+    "MBTI": "ENFJ"
+  },
+  {
+    "name": "김세정",
+    "nickname": "김세정",
+    "birthday": "1996-08-28",
+    "bloodType": "AB",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "김준면",
+    "nickname": "수호",
+    "birthday": "1991-05-22",
+    "bloodType": "AB",
+    "MBTI": "ENFJ"
+  },
+  {
+    "name": "변백현",
+    "nickname": "백현",
+    "birthday": "1992-05-06",
+    "bloodType": "O",
+    "MBTI": "ESTJ"
+  },
+  {
+    "name": "박찬열",
+    "nickname": "찬열",
+    "birthday": "1992-11-27",
+    "bloodType": "A",
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "도경수",
+    "nickname": "디오",
+    "birthday": "1993-01-12",
+    "bloodType": "A",
+    "MBTI": "ENTJ"
+  },
+  {
+    "name": "김종인",
+    "nickname": "카이",
+    "birthday": "1994-01-14",
+    "bloodType": "A",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "오세훈",
+    "nickname": "세훈",
+    "birthday": "1994-04-12",
+    "bloodType": "O",
+    "MBTI": "ISFJ"
+  },
+  {
+    "name": "배주현",
+    "nickname": "아이린",
+    "birthday": "1991-03-29",
+    "bloodType": "A",
+    "MBTI": "INFJ"
+  },
+  {
+    "name": "강슬기",
+    "nickname": "슬기",
+    "birthday": "1994-02-10",
+    "bloodType": "A",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "손승완",
+    "nickname": "웬디",
+    "birthday": "1994-02-21",
+    "bloodType": "O",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "박수영",
+    "nickname": "조이",
+    "birthday": "1996-09-03",
+    "bloodType": "A",
+    "MBTI": "INTP"
+  },
+  {
+    "name": "김예림",
+    "nickname": "예리",
+    "birthday": "1999-03-05",
+    "bloodType": "O",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "유재석",
+    "nickname": "유재석",
+    "birthday": "1972-08-14",
+    "bloodType": "B",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "이광수",
+    "nickname": "이광수",
+    "birthday": "1985-07-14",
+    "bloodType": "A",
+    "MBTI": "ISFP"
+  },
+  {
+    "name": "박민영",
+    "nickname": "박민영",
+    "birthday": "1986-03-04",
+    "bloodType": "O",
+    "MBTI": "ENFP"
+  },
+  {
+    "name": "양민아",
+    "nickname": "신민아",
+    "birthday": "1984-04-05",
+    "bloodType": "O",
+    "MBTI": "INTP"
+  },
+  {
+    "name": "한지민",
+    "nickname": "한지민",
+    "birthday": "1982-11-05",
+    "bloodType": "B",
+    "MBTI": "INFP"
+  },
+  {
+    "name": "이병헌",
+    "nickname": "이병헌",
+    "birthday": "1970-07-12",
+    "bloodType": "O",
+    "MBTI": "ENFJ"
+  },
+  {
+    "name": "이승기",
+    "nickname": "이승기",
+    "birthday": "1987-01-13",
+    "bloodType": "B",
+    "MBTI": "ENTJ"
+  }
 ]

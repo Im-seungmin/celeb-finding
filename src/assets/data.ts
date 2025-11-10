@@ -8,5 +8,28 @@ export const FORM_DATA = [
     type: 'select',
     options: ['A', 'B', 'O', 'AB'],
     dataType: 'bloodType'
+  },
+  {
+    name: 'MBTI',
+    placeholder: null,
+    type: 'select',
+    options: ['ISTJ'
+              ,'ISTP'
+              ,'ISFJ'
+              ,'ISFP'
+              ,'INTJ'
+              ,'INTP'
+              ,'INFJ'
+              ,'INFP'
+              ,'ESTJ'
+              ,'ESTP'
+              ,'ESFJ'
+              ,'ESFP'
+              ,'ENTJ'
+              ,'ENTP'
+              ,'ENFJ'
+              ,'ENFP'],
+    dataType: 'MBTI'
   }
 ] as const
+
