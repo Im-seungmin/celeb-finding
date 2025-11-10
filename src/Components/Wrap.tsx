@@ -1,13 +1,17 @@
 import styled, { keyframes } from 'styled-components'
 
 export const Wrap = styled.div`
-  width: 800px;
+  width: 100vw;
   height: 100vh;
 
   display: flex;
 
   margin: 0 auto;
-  margin-top: 80px;
+  padding-top: 80px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `
 
 export const TopArea = styled.div`
@@ -15,7 +19,13 @@ export const TopArea = styled.div`
   height: 500px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    align-items: center;
+  }
 `
 
 const slideFromLeft = keyframes`
@@ -37,6 +47,18 @@ const slideFromRight = keyframes`
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+`
+
+export const CommentArea = styled.div`
+  width: 480px;
+
+  text-align: center;
+
+  @media (max-width: 480px) {
+    width: 100%;
+
+    margin-bottom: 80px;
   }
 `
 

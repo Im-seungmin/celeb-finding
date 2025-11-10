@@ -33,6 +33,11 @@ export const Alert = styled.div<{ display: boolean }>`
   animation: ${fadeIn} 0.15s ease-out;
 
   font-size: 18px;
+
+  @media (max-width: 480px) {
+    width: 480px;
+    height: 100%;
+  }
 `
 
 export const AlertBox = styled.div<{WIDTH: string, HEIGHT: string}>`

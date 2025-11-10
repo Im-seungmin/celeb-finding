@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FORM_DATA } from '../assets/data'
 import { Button, Form, Input, ItemDiv, Select, TextDiv } from '../Components/Form'
-import { Content, Title, TopArea, Wrap } from '../Components/Wrap'
+import { CommentArea, Content, Title, TopArea, Wrap } from '../Components/Wrap'
 import { Alert, AlertBox, AlertMessage, MiniMessage, TitleMessage } from '../Components/Function'
 import type { FormType, ResultType } from '../assets/type'
 import { celebritieScore } from '../../api/api'
@@ -129,14 +129,14 @@ const Home = () => {
 
       {/* 상단 영역 */}
       <TopArea>
-        <div>
+        <CommentArea>
           <Title>나랑 비슷한 셀럽 찾기</Title>
           <Content>
             이름, 나이, 혈액형, 생일을 입력해주시면
             <br />
             가장 비슷한 셀럽을 찾아드립니다!
           </Content>
-        </div>
+        </CommentArea>
 
         <Form onSubmit={handleSubmit}>
           {FORM_DATA.map((item) => (
